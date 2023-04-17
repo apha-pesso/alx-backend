@@ -59,10 +59,10 @@ class Server:
         prev_page: number of the previous page, None if no previous page
         total_pages: the total number of pages in the dataset as an integer
         """
-        if page > 1:
-            prev = page - 1
-        else:
+        if page < 2:
             prev = None
+        else:
+            prev = page - 1
 
         hyper_dict = {}
 
