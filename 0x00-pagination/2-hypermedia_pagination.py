@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Pagination"""
 
-from typing import Tuple
 import csv
 import math
-from typing import Dict, List
+from typing import Dict
+from typing import List
+from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple:
