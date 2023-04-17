@@ -54,8 +54,8 @@ class Server:
                 data.append(data_[i])
             else:
                 next_index += 1
-        req_dict["index"] = index,
-        req_dict["data"] = data,
-        req_dict["page_size"] = page_size,
+        req_dict["index"] = index
+        req_dict["data"] = data
+        req_dict["page_size"] = page_size
         req_dict["next_index"] = next_index
         return req_dict
