@@ -77,7 +77,7 @@ class Server:
 
         total = len(self.dataset()) / page_size
 
-        hyper_dict['page_size'] = page_size
+        hyper_dict['page_size'] = len(data_)
         hyper_dict['page'] = page
         hyper_dict['data'] = data_
         hyper_dict['next_page'] = next_
