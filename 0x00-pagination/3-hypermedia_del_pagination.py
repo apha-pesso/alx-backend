@@ -50,8 +50,8 @@ class Server:
         page = index // page_size + 1
         data = []
         for i in range(index, end_index):
-            if i in dataset.keys():
-                data.append(dataset[i])
+            if i in data_.keys():
+                data.append(data_[i])
             else:
                 next_index += 1
         req_dict["index"] = index,
