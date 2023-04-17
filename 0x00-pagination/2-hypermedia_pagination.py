@@ -66,7 +66,7 @@ class Server:
 
         hyper_dict = {}
 
-        index = index_range(page, page_size)
+        # index = index_range(page, page_size)
 
         data_ = self.get_page(page, page_size)
 
