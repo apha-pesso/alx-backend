@@ -50,7 +50,7 @@ class Server:
         page_list = self.dataset()[start:end]
         return (page_list)
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, int]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Returns a dictionary:
             page_size: the length of the returned dataset page
             page: the current page number
