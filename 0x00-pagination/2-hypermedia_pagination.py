@@ -71,14 +71,14 @@ class Server:
         data_ = self.get_page(page, page_size)
 
         # if ((page * page_size) > len(data_)):
-            # next_ = None
+        # next_ = None
         # else:
-            # next_ = page + 1
+        # next_ = page + 1
 
         # if data_:
-            # next_ = page + 1
+        # next_ = page + 1
         # else:
-            # next_ = None
+        # next_ = None
 
         total = len(self.dataset()) / page_size
         if page >= total:
