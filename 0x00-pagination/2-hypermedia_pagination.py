@@ -80,12 +80,13 @@ class Server:
         # else:
             # next_ = None
 
-        total = len(self.dataset()) / page_size
+        total = len(self.dataset()) // page_size
+        print(total)
 
         hyper_dict['page_size'] = len(data_)
         hyper_dict['page'] = page
         hyper_dict['data'] = data_
         hyper_dict['next_page'] = next_
         hyper_dict['prev_page'] = prev
-        hyper_dict['total_pages'] = math.ceil(total)
+        hyper_dict['total_pages'] = total
         return hyper_dict
