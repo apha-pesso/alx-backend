@@ -16,7 +16,8 @@ class LFUCache(BaseCaching):
     def put(self, key, item):
         """Assign item to key"""
         if len(self.cache_data) == BaseCaching.MAX_ITEMS:
-            if key and item and key not in self.key_list:
+            # if key and item and key not in self.key_list:
+            if key and item:
 
                 values = list(self.key_dict.values())
                 # min_value = min(list(self.key_dict.values()))
@@ -24,9 +25,9 @@ class LFUCache(BaseCaching):
 
                 count = values.count(min_value)
                 # for i in range(count):
-                for key in self.key_list:
+                for ke in self.key_list:
                     for keye, value in self.key_dict.items():
-                        if value == min_value:
+                        if value == min_value and keye == ke:
                             my_key = keye
 
                 try:
