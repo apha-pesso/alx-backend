@@ -36,7 +36,7 @@ class LFUCache(BaseCaching):
                     for keye, value in self.key_dict.items():
                         if value == min_value and k == keye:
                             my_key = keye
-                            print(keye)
+                            # print(keye)
                             break
                     try:
                         if my_key:
